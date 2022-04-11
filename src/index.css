@@ -40,82 +40,140 @@ body {
 #350b6f : filter: invert(11%) sepia(43%) saturate(6156%) hue-rotate(261deg) brightness(84%) contrast(109%);
 
 #562fc7 : filter: invert(20%) sepia(92%) saturate(2797%) hue-rotate(250deg) brightness(78%) contrast(99%);
-
-
 */
-.Headercontainer {
-	background-color: var(--darkestColour);
-	color: var(--lightColour);
-	display: flex;
-	align-items: center;
-	width: 83.33%;
-	height: 12rem;
-	position: relative;
-	justify-content: space-between;
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
 }
-
-.Headercontainer li {
-	list-style-type: none;
+.grid-gap20 {
+	grid-gap: 2rem;
+}
+@media (max-width: 360px) {
+	.grid-column1-small {
+		grid-column: span 1;
+	}
+	.grid-column2-small {
+		grid-column: span 2;
+	}
+	.grid-column3-small {
+		grid-column: span 3;
+	}
+	.grid-column4-small {
+		grid-column: span 4;
+	}
+	.grid-column5-small {
+		grid-column: span 5;
+	}
+	.grid-column6-small {
+		grid-column: span 6;
+	}
+	.grid-column7-small {
+		grid-column: span 7;
+	}
+	.grid-column8-small {
+		grid-column: span 8;
+	}
+	.grid-column9-small {
+		grid-column: span 9;
+	}
+	.grid-column10-small {
+		grid-column: span 10;
+	}
+	.grid-column11-small {
+		grid-column: span 11;
+	}
+	.grid-column12-small {
+		grid-column: span 12;
+	}
+}
+@media (min-width: 360px) and (max-width: 768px) {
+	.grid-column1-medium {
+		grid-column: span 1;
+	}
+	.grid-column2-medium {
+		grid-column: span 2;
+	}
+	.grid-column3-medium {
+		grid-column: span 3;
+	}
+	.grid-column4-medium {
+		grid-column: span 4;
+	}
+	.grid-column5-medium {
+		grid-column: span 5;
+	}
+	.grid-column6-medium {
+		grid-column: span 6;
+	}
+	.grid-column7-medium {
+		grid-column: span 7;
+	}
+	.grid-column8-medium {
+		grid-column: span 8;
+	}
+	.grid-column9-medium {
+		grid-column: span 9;
+	}
+	.grid-column10-medium {
+		grid-column: span 10;
+	}
+	.grid-column11-medium {
+		grid-column: span 11;
+	}
+	.grid-column12-medium {
+		grid-column: span 12;
+	}
+}
+@media (min-width: 768px) {
+	.grid-column1-large {
+		grid-column: span 1;
+	}
+	.grid-column2-large {
+		grid-column: span 2;
+	}
+	.grid-column3-large {
+		grid-column: span 3;
+	}
+	.grid-column4-large {
+		grid-column: span 4;
+	}
+	.grid-column5-large {
+		grid-column: span 5;
+	}
+	.grid-column6-large {
+		grid-column: span 6;
+	}
+	.grid-column7-large {
+		grid-column: span 7;
+	}
+	.grid-column8-large {
+		grid-column: span 8;
+	}
+	.grid-column9-large {
+		grid-column: span 9;
+	}
+	.grid-column10-large {
+		grid-column: span 10;
+	}
+	.grid-column11-large {
+		grid-column: span 11;
+	}
+	.grid-column12-large {
+		grid-column: span 12;
+	}
 }
 .logoText {
-	font-family: azonix;
-	font-size: 2rem;
-	margin-left: 12rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	width: 7ch;
 }
-.navBar {
-	display: flex;
-	text-align: center;
-	font-size: 1.8rem;
-}
-.navBar > li {
-	padding: 0 2rem 0 2rem;
-}
-
-.navIcons > img {
-	filter: invert(100%) sepia(41%) saturate(1011%) hue-rotate(180deg)
-		brightness(103%) contrast(98%);
-	padding: 0 2rem 0 2rem;
-}
-
-.heroSection {
-	width: 83.33%;
-	height: 90rem;
-	background-color: var(--mediumColour);
-	color: var(--lightColour);
-	padding-left: 12rem;
-	padding-top: 17.5rem;
-}
-
 .heroSectionTagLine {
-	display: flex;
-	flex-direction: column;
-	font-size: 6.8rem;
-	font-weight: 500;
-	letter-spacing: -0.15rem;
+	width: 11ch;
 }
-.greetPhraseContainer {
-	padding-top: 8rem;
-	display: flex;
+.projectDescription {
+	width: 50ch;
 }
-.greetPhraseContainer img {
-	filter: invert(100%) sepia(41%) saturate(1011%) hue-rotate(180deg)
-		brightness(103%) contrast(98%);
-	height: 3.4rem;
-	width: 3.4rem;
-	transform: rotate(180deg);
+.skillDescription {
+	width: 25ch;
 }
-.greetPhrase {
-	padding-left: 1rem;
-	font-size: 3rem;
-}
-.callToAction {
-	padding-top: 12.8rem;
-}
-
 .circle {
 	animation: circleAnim 1s infinite alternate-reverse;
 }
@@ -128,16 +186,4 @@ body {
 	to {
 		transform: translateY(-5.2rem);
 	}
-}
-.heroSectionContainer {
-	position: relative;
-}
-.landingPageImageContainer {
-	position: absolute;
-	top: 13.2rem;
-	right: 12rem;
-}
-.landingPageImage {
-	height: 52rem;
-	width: 52rem;
 }

@@ -1,13 +1,10 @@
-import React from 'react'
-import gitHubIcon from '../resources/icons/github.svg'
-import LinkedInIcon from '../resources/icons/linkedIn.svg'
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 function Header() {
 	return (
 		<>
-			<div className="Headercontainer">
+			<div className="headerContainer">
 				<h3 className="logoText">
-					<p>Rishaba</p>
-					<p>Priyan</p>
+					<p>Rishaba Priyan</p>
 				</h3>
 				<nav>
 					<ul className="navBar">
@@ -18,8 +15,8 @@ function Header() {
 					</ul>
 				</nav>
 				<div className="navIcons">
-					<img src={gitHubIcon} alt="GitHub" />
-					<img src={LinkedInIcon} alt="LinkedIn" />
+					<FaGithub />
+					<FaLinkedinIn />
 				</div>
 			</div>
 		</>

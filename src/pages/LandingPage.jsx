@@ -1,17 +1,14 @@
-import React from 'react'
-import handCursor from '../resources/icons/HandCursor.svg'
+import { FaHandPointDown } from 'react-icons/fa'
 import LandingPageImage from '../resources/images/Landing.svg'
 function LandingPage() {
 	return (
 		<div className="heroSectionContainer">
 			<div className="heroSection">
 				<div className="heroSectionTagLine">
-					<p>Beautifully</p>
-					<p>Crafted web</p>
-					<p>Experiences</p>
+					<p>Beautifully Crafted web Experiences</p>
 				</div>
 				<div className="greetPhraseContainer">
-					<img src={handCursor} alt="Hand Down" />
+					<FaHandPointDown />
 					<p className="greetPhrase">Meet Rishaba Priyan</p>
 				</div>
 				<div className="callToAction">
