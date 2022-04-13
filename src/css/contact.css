@@ -1,0 +1,106 @@
+.contactMesectionContainer {
+	padding: 5.5rem 12rem 5.5rem 12rem;
+	position: relative;
+	background: linear-gradient(
+		to bottom,
+		var(--lightColour) 50%,
+		var(--darkestColour) 50%
+	);
+}
+
+.Header {
+	font-size: 3.2rem;
+	color: var(--darkestColour);
+	font-weight: 500;
+}
+.contactMeContainer {
+	margin-top: 2.5rem;
+}
+.mailImageContainer {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+.mailImageContainer img {
+	width: 56.7rem;
+	height: 55.4rem;
+}
+.contactFormContainer {
+	background-color: var(--mediumColour);
+	color: var(--lightColour);
+	border-radius: 3.1rem;
+	height: 70rem;
+	width: 48.8rem;
+}
+.form-control {
+	display: flex;
+	flex-direction: column;
+	padding: 5rem 8rem 5rem 8rem;
+}
+.form-control div {
+	margin-bottom: 2.5rem;
+}
+.form-control .formHeader {
+	font-size: 2.8rem;
+	font-weight: 600;
+}
+.form-control input[type='text']::placeholder {
+	color: var(--lightColour);
+	opacity: 1;
+}
+.form-control input[type='text'] {
+	background: transparent;
+	border: none;
+	background-color: var(--mediumColour);
+	color: var(--lightColour);
+	border-bottom: solid 1px var(--lightColour);
+	width: 100%;
+	font-size: 2rem;
+	height: 4rem;
+}
+
+.form-control textarea {
+	background-color: var(--lightColour);
+	font-size: 2rem;
+	height: 22.5rem;
+	width: 100%;
+	border-radius: 2.1rem;
+	padding: 1rem;
+}
+
+.form-control input[type='text']:focus,
+.form-control textarea:focus {
+	outline: none;
+}
+.form-control label {
+	font-size: 2rem;
+	margin-top: 1rem;
+}
+.submitButton button {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 2rem;
+	font-family: linux-libertine;
+}
+.form-control .submitButton button {
+	width: 13rem;
+	height: 4.5rem;
+	border-radius: 2.1rem;
+	background-color: var(--darkestColour);
+	color: var(--lightColour);
+}
+.submitButton button,
+.submitButton button:focus {
+	outline: none;
+	border: 1px solid transparent;
+}
+
+.formDiv {
+	margin-top: 2rem;
+}
+.formDivMessage {
+	margin-top: 5rem;
+}

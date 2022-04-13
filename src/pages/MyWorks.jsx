@@ -4,40 +4,69 @@ import ticketSystem from '../resources/images/TicketSystem/TicketSystemFinalMock
 function MyWorks() {
 	return (
 		<div className="myWorksContainer">
-			<div className="header">Featured Projects</div>
+			<div className="sectionHeader" id="myWorks">
+				Featured Projects
+			</div>
 			<div className="eachProjectContainer">
-				<h2 className="projectHeader">Ticket System</h2>
-				<p className="projectDescription">
-					This is a website where registered users raise tickets regarding
-					specific products.The website is made using MERN Stack.
-				</p>
-				<p className="projectNumberIndicator">1</p>
-				<div className="projectImageMockup">
-					<img src={ticketSystem} alt="Project showcase" />
+				<div className=" marginProjectContainer">
+					<div className="headingAndDescContainer">
+						<h2 className="projectHeader">Ticket System</h2>
+						<p className="projectDescription">
+							This is a website where registered users, raise tickets regarding
+							specific products.The website is made using MERN Stack.
+						</p>
+					</div>
+					<div className="numberAndMockupContainer">
+						<div>
+							<span className="projectNumberIndicator">1</span>
+						</div>
+
+						<div className="projectImageMockup ">
+							<img src={ticketSystem} alt="Project showcase" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className=" eachProjectContainer even">
+				<div className=" marginProjectContainer">
+					<div className="headingAndDescContainer ">
+						<h2 className="projectHeader">House Market Place</h2>
+						<p className="projectDescription">
+							This is a website where registered users can share listings for
+							either rent or sale. The website is made using ReactJs for
+							FrontEnd and Google Firestore for backend.
+						</p>
+					</div>
+					<div className="numberAndMockupContainer">
+						<div>
+							<span className="projectNumberIndicator">2</span>
+						</div>
+
+						<div className="projectImageMockup ">
+							<img src={houseMarketPlace} alt="Project showcase" />
+						</div>
+					</div>
 				</div>
 			</div>
 			<div className="eachProjectContainer">
-				<h2 className="projectHeader">House Market Place</h2>
-				<p className="projectDescription">
-					This is a website where registered users can share listings for either
-					rent or sale. The website is made using ReactJs for FrontEnd and
-					Google Firestore for backend.
-				</p>
-				<p className="projectNumberIndicator">2</p>
-				<div className="projectImageMockup">
-					<img src={houseMarketPlace} alt="Project showcase" />
-				</div>
-			</div>
-			<div className="eachProjectContainer">
-				<h2 className="projectHeader">GitHub Profile Finder</h2>
-				<p className="projectDescription">
-					This is a website where anyone can search and view github profiles and
-					other related information .The website is made using
-					ReactJs,TailwindCSS and DaisyUi for FrontEnd and GitHub API.
-				</p>
-				<p className="projectNumberIndicator">3</p>
-				<div className="projectImageMockup">
-					<img src={gitHubFinder} alt="Project showcase" />
+				<div className="marginProjectContainer ">
+					<div className="headingAndDescContainer">
+						<h2 className="projectHeader">GitHub Profile Finder</h2>
+						<p className="projectDescription">
+							This is a website where anyone can search and view github profiles
+							and other related information .The website is made using
+							ReactJs,TailwindCSS and DaisyUi for FrontEnd and GitHub API.
+						</p>
+					</div>
+					<div className="numberAndMockupContainer">
+						<div>
+							<span className="projectNumberIndicator">3</span>
+						</div>
+
+						<div className="projectImageMockup ">
+							<img src={gitHubFinder} alt="Project showcase" />
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

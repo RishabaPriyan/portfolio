@@ -1,0 +1,75 @@
+.myWorksContainer {
+	padding-top: 18rem;
+}
+.sectionHeader {
+	font-size: 3.2rem;
+	color: var(--darkestColour);
+	font-weight: 500;
+	margin-bottom: 5.5rem;
+	margin-left: 12rem;
+}
+.marginProjectContainer {
+	margin-left: 12rem;
+}
+.eachProjectContainer {
+	padding-top: 5.5rem;
+	padding-bottom: 5.5rem;
+	margin-bottom: 5.5rem;
+	height: min(110rem);
+	border-radius: 2rem;
+}
+.headingAndDescContainer {
+	display: flex;
+	flex-direction: column;
+}
+.projectHeader {
+	font-size: 4.8rem;
+	color: var(--mediumColour);
+	font-weight: 500;
+	padding-bottom: 5.5rem;
+}
+.projectDescription {
+	width: min(50ch);
+	font-size: 2.4rem;
+	color: var(--mediumColour);
+	font-weight: 500;
+}
+
+.numberAndMockupContainer {
+	display: flex;
+	align-items: flex-start;
+}
+.projectNumberIndicator {
+	font-size: 60rem;
+	color: var(--mediumColour);
+	opacity: 40%;
+}
+
+.projectImageMockup {
+	display: inline;
+}
+.projectImageMockup > img {
+	height: 75rem;
+	width: 150rem;
+}
+
+.eachProjectContainer.even {
+	background-color: var(--mediumColour);
+	color: var(--lightColour);
+	padding-right: 12rem;
+}
+.eachProjectContainer.even .headingAndDescContainer {
+	align-items: flex-end;
+}
+.eachProjectContainer.even .numberAndMockupContainer {
+	flex-direction: row-reverse;
+}
+.eachProjectContainer.even .projectHeader,
+.eachProjectContainer.even .projectDescription {
+	color: var(--lightColour);
+}
+
+.eachProjectContainer.even .projectNumberIndicator {
+	color: var(--darkestColour);
+	opacity: 1;
+}

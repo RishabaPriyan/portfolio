@@ -1,0 +1,51 @@
+.mySkillsContainer {
+	padding: 5.5rem 12rem 5.5rem 12rem;
+}
+
+.sectionContainer {
+	position: relative;
+}
+.secHeader {
+	font-size: 3.2rem;
+	color: var(--darkestColour);
+	font-weight: 500;
+}
+.skillContainer {
+	grid-column-gap: 10rem;
+	margin-top: 25rem;
+}
+.skillsImageContainer {
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	right: 0;
+}
+.skillsImageContainer img {
+	width: 35rem;
+	height: 41.5rem;
+}
+
+.eachSkillContainer {
+	background-color: var(--mediumColour);
+	color: var(--lightColour);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: min(39.5rem);
+	border-radius: 3rem;
+	z-index: 1;
+}
+.eachSkillContainer .skillIcon,
+.eachSkillContainer .skillHeader,
+.eachSkillContainer .skillDescription {
+	margin-bottom: 2.5rem;
+}
+.skillIcon svg {
+	height: 4.8rem;
+	width: 4.8rem;
+}
+.skillDescription {
+	width: 30ch;
+	text-align: center;
+}
