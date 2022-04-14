@@ -5,7 +5,7 @@ function MyWorks() {
 	return (
 		<div className="myWorksContainer">
 			<div className="sectionHeader" id="myWorks">
-				Featured Projects
+				<span className="headerDecoration">Fea</span>tured Projects
 			</div>
 			<div className="eachProjectContainer">
 				<div className=" marginProjectContainer">

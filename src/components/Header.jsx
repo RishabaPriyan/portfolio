@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import { HashLink as Link } from 'react-router-hash-link'
 function Header() {
 	return (
 		<>
@@ -7,7 +8,7 @@ function Header() {
 					<div className="logoTextContainer grid-column3 grid-column10-mobile grid-column4-tablet grid-column3-laptop ">
 						<h3 className="logoText">
 							<p>
-								<a href="#heroSection">Rishaba Priyan</a>
+								<Link to="/">Rishaba Priyan</Link>
 							</p>
 						</h3>
 					</div>
@@ -15,16 +16,16 @@ function Header() {
 						<nav>
 							<ul className="navBar">
 								<li>
-									<a href="#myWorks">Works</a>
+									<Link to="/#myWorks">Works</Link>
 								</li>
 								<li>
-									<a href="#mySkills">Skills</a>
+									<Link to="/#mySkills">Skills</Link>
 								</li>
 								<li>
-									<a href="#aboutMe">About Me</a>
+									<Link to="/about-me">About Me</Link>
 								</li>
 								<li>
-									<a href="#contactMe">Contact</a>
+									<Link to="/#contactMe">Contact</Link>
 								</li>
 							</ul>
 						</nav>

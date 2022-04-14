@@ -5,7 +5,7 @@ function MySkills() {
 	return (
 		<div className="mySkillsContainer">
 			<div className="secHeader grid-column2" id="mySkills">
-				My Skills
+				<span className="headerDecoration">My </span>Skills
 			</div>
 			<section className="sectionContainer grid">
 				<div></div>

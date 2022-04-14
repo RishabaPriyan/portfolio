@@ -28,7 +28,7 @@ function ContactMe() {
 	return (
 		<section className="contactMesectionContainer">
 			<h2 className="Header" id="contactMe">
-				Contact
+				<span className="headerDecoration">Con</span>tact
 			</h2>
 			<div className="contactMeContainer grid">
 				<div className="mailImageContainer grid-column6">

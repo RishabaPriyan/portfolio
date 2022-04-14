@@ -104,3 +104,27 @@
 .formDivMessage {
 	margin-top: 5rem;
 }
+
+.headerDecoration {
+	text-decoration: overline var(--mediumColour);
+	text-decoration-thickness: 1rem;
+}
+
+.headerDecoration.invert {
+	text-decoration: overline var(--lightColour);
+	text-decoration-thickness: 1rem;
+}
+
+.aboutMeContainer {
+	height: 105rem;
+	padding: 5.5rem 12rem 5.5rem 12rem;
+	background: linear-gradient(
+		to right,
+
+		var(--mediumColour) 75%,
+		var(--lightColour) 25%
+	);
+}
+
+.profilePicImageContainer {
+}
