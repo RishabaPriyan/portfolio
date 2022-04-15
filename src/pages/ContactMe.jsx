@@ -2,13 +2,13 @@ import mailme from '../resources/images/Email.svg'
 import { FaPaperPlane } from 'react-icons/fa'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import { toast } from 'react-toastify'
 
 function ContactMe() {
 	const form = useRef()
 
 	const sendEmail = (e) => {
 		e.preventDefault()
-
 		emailjs
 			.sendForm(
 				process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -18,10 +18,10 @@ function ContactMe() {
 			)
 			.then(
 				(result) => {
-					console.log(result.text)
+					toast.success('Email sent successfully')
 				},
 				(error) => {
-					console.log(error.text)
+					toast.error('Sorry.Unable to send email')
 				}
 			)
 	}
