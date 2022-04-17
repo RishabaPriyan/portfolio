@@ -1,11 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import './css/headerFooter.css'
-import './css/heroSection.css'
-import './css/works.css'
-import './css/skills.css'
-import './css/contact.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 

@@ -26,7 +26,7 @@ function ContactMe() {
 			)
 	}
 	return (
-		<section className="contactMesectionContainer">
+		<section className="contactMeSectionContainer">
 			<h2 className="Header" id="contactMe">
 				<span className="headerDecoration">Con</span>tact
 			</h2>

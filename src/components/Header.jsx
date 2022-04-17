@@ -4,11 +4,11 @@ function Header() {
 	return (
 		<>
 			<div className="grid ">
-				<div className="headerContainer grid grid-column9">
+				<div className="headerContainer grid grid-column9 grid-column12-mobile">
 					<div className="logoTextContainer grid-column3 grid-column10-mobile grid-column4-tablet grid-column3-laptop ">
 						<h3 className="logoText">
 							<p>
-								<Link to="/">Rishaba Priyan</Link>
+								<Link to="/#heroSection">Rishaba Priyan</Link>
 							</p>
 						</h3>
 					</div>
@@ -22,7 +22,7 @@ function Header() {
 									<Link to="/#mySkills">Skills</Link>
 								</li>
 								<li>
-									<Link to="/about-me">About Me</Link>
+									<Link to="/#about-me">About Me</Link>
 								</li>
 								<li>
 									<Link to="/#contactMe">Contact</Link>
@@ -35,13 +35,18 @@ function Header() {
 
 						<div></div>
 						<div className="navFlexBox">
-							<a href="https://github.com/RishabaPriyan" target="_blank">
+							<a
+								href="https://github.com/RishabaPriyan"
+								target="_blank"
+								rel="noreferrer"
+							>
 								<FaGithub />
 							</a>
 
 							<a
 								href="https://www.linkedin.com/in/rishaba-priyan-a31a84123/"
 								target="_blank"
+								rel="noreferrer"
 							>
 								<FaLinkedinIn />
 							</a>

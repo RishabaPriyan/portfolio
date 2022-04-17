@@ -3,6 +3,7 @@ import HeroSection from './HeroSection'
 import MyWorks from './MyWorks'
 import MySkills from './MySkills'
 import ContactMe from './ContactMe'
+import AboutMe from './AboutMe'
 
 function Home() {
 	return (
@@ -11,6 +12,7 @@ function Home() {
 				<HeroSection />
 				<MyWorks />
 				<MySkills />
+				<AboutMe />
 				<ContactMe />
 			</main>
 		</>
