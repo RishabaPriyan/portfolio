@@ -33,19 +33,19 @@ function AboutMe() {
 				<div className="grid-column1 empty-grid"></div>
 			</div>
 			<div className="secondRow grid-column12 grid">
-				<div className="textContainer grid-column4 grid-column12-mobile">
+				<div className="textContainer grid-column4 grid-column12-mobile grid-column12-tablet grid-column12-laptop">
 					<h2 className="aboutMeHeader">
 						<span className="headerDecoration invert">My</span> Interests
 					</h2>
-					<section className="grid-column12 grid interestsSection">
-						<span className="grid-column6 grid-column12-mobile">
+					<section className="grid-column12 grid interestsSection grid-column12-laptop">
+						<span className="grid-column6 grid-column12-mobile grid-column6-tablet grid-column6-laptop">
 							<ul>
 								<li>Web Design </li>
 								<li>Art</li>
 								<li>Illustrated Comics</li>
 							</ul>
 						</span>
-						<span className="grid-column6 grid-column12-mobile">
+						<span className="grid-column6 grid-column12-mobile grid-column6-tablet grid-column6-laptop">
 							<ul>
 								<li>Chess </li>
 								<li>Books</li>
@@ -55,7 +55,7 @@ function AboutMe() {
 					</section>
 				</div>
 				<div className="grid-column2 empty-grid"></div>
-				<div className="resumeDownloadLinkContainer grid-column4 grid-column12-mobile">
+				<div className="resumeDownloadLinkContainer grid-column4 grid-column12-mobile grid-column6-tablet">
 					<a
 						href="https://drive.google.com/file/d/1l-68ZZHHWD3jA5duH8t0VZf59lLRJiaY/view?usp=sharing"
 						className="resumeDownloadLink"

@@ -10,8 +10,10 @@ function Header() {
 			console.log(top)
 			if (top > 870) {
 				headerElement.classList.add('transformFullBackground')
+				headerElement.classList.remove('transformFullBackgroundWhite')
 			} else {
 				headerElement.classList.remove('transformFullBackground')
+				headerElement.classList.add('transformFullBackgroundWhite')
 			}
 		}
 	})

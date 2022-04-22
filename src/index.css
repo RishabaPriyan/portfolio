@@ -95,11 +95,11 @@ body {
 }
 
 /*------------------------------------Header-------------------------------*/
-.otherHalf {
-	display: none;
+.transformFullBackgroundWhite {
+	background-color: var(--lightColour);
 }
 .transformFullBackground {
-	display: block;
+	background-color: var(--darkestColour);
 }
 
 .headerContainer {
@@ -117,7 +117,6 @@ body {
 .otherHalf {
 	width: 25%;
 	position: fixed;
-	background-color: var(--darkestColour);
 	height: 120px;
 	right: 0;
 	overflow: hidden;
@@ -370,6 +369,7 @@ a {
 .skillDescription {
 	width: 30ch;
 	text-align: center;
+	font-size: 2rem;
 }
 
 /*------------------------------------AboutMe------------------------------------*/
@@ -851,9 +851,8 @@ a {
 	.formDivMessage {
 		margin-top: 3rem;
 	}
-
-	/*----------------------------------aboutMe---------------------------------*/
 }
+/*----------------------------------Tablet---------------------------------*/
 @media (min-width: 481px) and (max-width: 768px) {
 	.grid-column1-tablet {
 		grid-column: span 1;
@@ -891,7 +890,241 @@ a {
 	.grid-column12-tablet {
 		grid-column: span 12;
 	}
+
+	/*---------------------------------------HeroSection-------------------------------*/
+
+	.heroSectionTagLine {
+		width: 14ch;
+	}
+	.landingPageImageContainer {
+		display: none;
+	}
+	.greetPhraseContainer {
+		width: 32rem;
+	}
+	/*----------------------------------Works---------------------------------*/
+
+	.myWorksContainer {
+		padding-top: 12rem;
+	}
+	/* .myWorksContainer * {
+		border: solid 1px;
+	} */
+	.sectionHeader {
+		font-size: 3rem;
+		margin-bottom: 4rem;
+		margin-left: 12rem;
+	}
+	.marginProjectContainer {
+		margin-left: 12rem;
+	}
+	.eachProjectContainer {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		margin-bottom: 4rem;
+		height: min(60rem);
+	}
+
+	.projectHeader {
+		font-size: 3.2rem;
+		padding-bottom: 4rem;
+	}
+	.infoButton {
+		height: 1.5rem;
+	}
+	.projectDescription {
+		width: min(45ch);
+		font-size: 2.4rem;
+	}
+
+	.numberAndMockupContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		position: relative;
+	}
+	.projectNumberIndicator {
+		font-size: 30rem;
+		display: none;
+	}
+
+	.projectImageMockup {
+		position: absolute;
+		display: inline;
+	}
+	.projectImageMockup > img {
+		height: 25rem;
+		width: 50rem;
+	}
+
+	.eachProjectContainer.even {
+		background-color: var(--mediumColour);
+		color: var(--lightColour);
+		padding-right: 0;
+	}
+	.eachProjectContainer.even .headingAndDescContainer {
+		align-items: baseline;
+	}
+	.eachProjectContainer.even .numberAndMockupContainer {
+		flex-direction: row;
+	}
+	.eachProjectContainer.even .projectHeader,
+	.eachProjectContainer.even .projectDescription {
+		color: var(--lightColour);
+	}
+
+	.eachProjectContainer.even .projectNumberIndicator {
+		color: var(--darkestColour);
+		opacity: 1;
+	}
+
+	/*----------------------------------skills---------------------------------*/
+
+	/* .mySkillsContainer * {
+		border: solid 1px;
+	} */
+	.mySkillsContainer {
+		padding: 5.5rem 12rem 5.5rem 12rem;
+	}
+
+	.secHeader {
+		font-size: 3.2rem;
+		margin-bottom: 4rem;
+	}
+	.skillContainer {
+		grid-column-gap: 10rem;
+		margin-top: 0rem;
+		grid-template-columns: max-content;
+		grid-row-gap: 2rem;
+	}
+	.skillsImageContainer {
+		display: none;
+	}
+
+	.eachSkillContainer {
+		height: min(33rem);
+	}
+
+	.skillIcon svg {
+		height: 3.2rem;
+		width: 3.2rem;
+	}
+
+	/*----------------------------------aboutMe---------------------------------*/
+	/* .aboutMeContainer * {
+		border: solid 1px;
+	} */
+	.empty-grid {
+		display: none;
+	}
+	.aboutMeContainer {
+		padding: 5.5rem 12rem 5.5rem 12rem;
+		background: var(--mediumColour);
+		color: var(--lightColour);
+		font-size: 2.4rem;
+		position: relative;
+		height: 100%;
+	}
+	.firstRow {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 0rem;
+	}
+
+	.textContainer section {
+		margin-top: 38rem;
+	}
+	.secondRow section {
+		margin-top: 3.5rem;
+	}
+	.textContainer section p {
+		margin-top: 5.5rem;
+		width: 45ch;
+	}
+	.aboutMeHeader {
+		color: var(--lightColour);
+		font-weight: normal;
+		font-size: 3.2rem;
+	}
+
+	.profilePicImage {
+		width: 30rem;
+		height: 30rem;
+		border-radius: 15rem;
+		position: absolute;
+		top: 10rem;
+		left: 25rem;
+	}
+	.secondRow {
+		margin-top: 5.5rem;
+	}
+
+	.resumeDownloadLinkContainer {
+		display: flex;
+		margin-top: 3.5rem;
+		justify-content: space-around;
+	}
+
+	/*----------------------------------ContactMe-------------------------------*/
+
+	.contactMeSectionContainer {
+		padding: 5.5rem 12rem 5.5rem 12rem;
+	}
+
+	.Header {
+		font-size: 3.2rem;
+	}
+	.contactMeContainer {
+		margin-top: 2.5rem;
+	}
+	.mailImageContainer {
+		display: block;
+	}
+
+	.contactFormContainer {
+		height: 57rem;
+		width: 30rem;
+		margin-left: 18rem;
+	}
+	.form-control {
+		display: flex;
+		flex-direction: column;
+		padding: 4rem 3rem 4rem 3rem;
+	}
+	.form-control div {
+		margin-bottom: 1.5rem;
+	}
+	.form-control .formHeader {
+		font-size: 2.4rem;
+	}
+	.secondRow ul li {
+		padding-top: 0.5rem;
+	}
+	.submitButton {
+		display: flex;
+		justify-content: center;
+	}
+
+	.formDiv {
+		margin-top: 2rem;
+	}
+	.formDivMessage {
+		margin-top: 3rem;
+	}
+
+	.mailImageContainer {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+		margin-left: 12rem;
+	}
+	.mailImageContainer img {
+		width: 30rem;
+		height: 30rem;
+	}
 }
+/*---------------------------------------laptop-----------------------------------*/
 @media (min-width: 769px) and (max-width: 1024px) {
 	.grid-column1-laptop {
 		grid-column: span 1;
@@ -928,5 +1161,66 @@ a {
 	}
 	.grid-column12-laptop {
 		grid-column: span 12;
+	}
+
+	.landingPageImage {
+		height: 30rem;
+		width: 30rem;
+	}
+
+	.projectImageMockup > img {
+		height: 30rem;
+		width: 55rem;
+	}
+	.projectNumberIndicator {
+		font-size: 30rem;
+	}
+
+	.eachProjectContainer {
+		height: min(70rem);
+	}
+
+	.skillIcon svg {
+		height: 3.2rem;
+		width: 3.2rem;
+	}
+	.eachSkillContainer .skillIcon,
+	.eachSkillContainer .skillHeader,
+	.eachSkillContainer .skillDescription {
+		text-align: center;
+	}
+
+	.skillDescription {
+		width: 18ch;
+	}
+
+	.profilePicImage {
+		width: 30rem;
+		height: 30rem;
+		border-radius: 15rem;
+	}
+	.profilePicImageContainer {
+		margin-top: 10rem;
+		margin-left: 10rem;
+	}
+	.textContainer section p {
+		margin-top: 5.5rem;
+		width: 33ch;
+	}
+
+	.empty-grid {
+		display: none;
+	}
+
+	.mailImageContainer {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+		margin-left: 12rem;
+	}
+	.mailImageContainer img {
+		width: 35rem;
+		height: 35rem;
 	}
 }

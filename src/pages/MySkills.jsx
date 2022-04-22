@@ -13,7 +13,7 @@ function MySkills() {
 					<img src={skills} alt="Guy holding skill" />
 				</div>
 				<div className="skillContainer grid-column12 grid">
-					<div className="eachSkillContainer grid-column4">
+					<div className="eachSkillContainer grid-column4 grid-column3-laptop">
 						<div className="skillIcon">
 							<FaCode />
 						</div>
@@ -27,7 +27,7 @@ function MySkills() {
 							</p>
 						</div>
 					</div>
-					<div className="eachSkillContainer grid-column4">
+					<div className="eachSkillContainer grid-column4 grid-column3-laptop">
 						<div className="skillIcon">
 							<FaServer />
 						</div>
@@ -40,7 +40,7 @@ function MySkills() {
 							</p>
 						</div>
 					</div>
-					<div className="eachSkillContainer grid-column4">
+					<div className="eachSkillContainer grid-column4 grid-column3-laptop">
 						<div className="skillIcon">
 							<FaDatabase />
 						</div>

@@ -31,11 +31,11 @@ function ContactMe() {
 				<span className="headerDecoration">Con</span>tact
 			</h2>
 			<div className="contactMeContainer grid">
-				<div className="mailImageContainer grid-column6">
+				<div className="mailImageContainer grid-column6 grid-column3-laptop">
 					<img src={mailme} alt="Man with mail in hand" />
 				</div>
-				<div className="grid-column1"></div>
-				<div className="contactFormContainer grid-column5">
+				<div className="grid-column1 grid-column4-laptop"></div>
+				<div className="contactFormContainer grid-column5 grid-column5-laptop">
 					<form className="form-control" ref={form} onSubmit={sendEmail}>
 						<div>
 							<h2 className="formHeader">Send a message</h2>

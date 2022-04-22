@@ -4,7 +4,7 @@ import TypeWriter from 'typewriter-effect'
 function LandingPage() {
 	return (
 		<div className=" heroSectionContainer grid " id="heroSection">
-			<div className=" grid-column5 grid-column12-mobile">
+			<div className=" grid-column5 grid-column12-mobile grid-column5-laptop">
 				<div className="heroSection">
 					<div className="heroSectionTagLine">
 						<p>
@@ -45,8 +45,8 @@ function LandingPage() {
 					</div>
 				</div>
 			</div>
-			<div className=" grid-column1 "></div>
-			<div className="landingPageImageContainer grid-column6 ">
+			<div className=" grid-column1 grid-column2-laptop"></div>
+			<div className="landingPageImageContainer grid-column6 grid-column5-laptop">
 				<img
 					className="landingPageImage"
 					src={LandingPageImage}
