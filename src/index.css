@@ -590,6 +590,9 @@ a {
 	}
 
 	/*----------------------------------Header---------------------------------------*/
+	.transformFullBackgroundWhite {
+		background-color: var(--darkestColour);
+	}
 	.headerContainer {
 		padding-left: 6rem;
 		position: fixed;
