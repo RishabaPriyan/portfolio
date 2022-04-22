@@ -1,9 +1,19 @@
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { HashLink as Link } from 'react-router-hash-link'
 function Header() {
+	const headerElement = document.querySelector('.topMostContainer')
+
+	window.onscroll = function () {
+		var top = window.scrollY
+		if (top > 850) {
+			headerElement.classList.add('transformFullBackground')
+		} else {
+			headerElement.classList.remove('transformFullBackground')
+		}
+	}
 	return (
 		<>
-			<div className="grid ">
+			<div className="grid topMostContainer">
 				<div className="headerContainer grid grid-column9 grid-column12-mobile">
 					<div className="logoTextContainer grid-column3 grid-column10-mobile grid-column4-tablet grid-column3-laptop ">
 						<h3 className="logoText">

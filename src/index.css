@@ -95,6 +95,9 @@ body {
 }
 
 /*------------------------------------Header-------------------------------*/
+.transformFullBackground {
+	background-color: var(--darkestColour);
+}
 .headerContainer {
 	height: 12rem;
 	background-color: var(--darkestColour);
@@ -508,7 +511,9 @@ a {
 	outline: none;
 	border: 1px solid transparent;
 }
-
+.submitButton button:hover {
+	background-color: #23054d;
+}
 .formDiv {
 	margin-top: 2rem;
 }
@@ -567,6 +572,9 @@ a {
 	/*----------------------------------Header---------------------------------------*/
 	.headerContainer {
 		padding-left: 6rem;
+		position: fixed;
+		width: 100%;
+		z-index: 10;
 	}
 	.navBarContainer {
 		display: none;
@@ -582,6 +590,7 @@ a {
 		padding-top: 12rem;
 		height: 60rem;
 		padding-bottom: 12rem;
+		margin-top: 12rem;
 	}
 
 	.landingPageImageContainer {
@@ -807,6 +816,9 @@ a {
 	}
 	.form-control .formHeader {
 		font-size: 2rem;
+	}
+	.secondRow ul li {
+		padding-top: 0.5rem;
 	}
 	.submitButton {
 		display: flex;
