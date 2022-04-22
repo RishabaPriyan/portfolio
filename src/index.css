@@ -95,14 +95,33 @@ body {
 }
 
 /*------------------------------------Header-------------------------------*/
-.transformFullBackground {
-	background-color: var(--darkestColour);
+.otherHalf {
+	display: none;
 }
+.transformFullBackground {
+	display: block;
+}
+
 .headerContainer {
 	height: 12rem;
 	background-color: var(--darkestColour);
 	color: var(--lightColour);
 	padding-left: 12rem;
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	width: 75%;
+	z-index: 10;
+}
+
+.otherHalf {
+	width: 25%;
+	position: fixed;
+	background-color: var(--darkestColour);
+	height: 120px;
+	right: 0;
+	overflow: hidden;
+	z-index: 10;
 }
 a {
 	color: inherit;
@@ -158,6 +177,7 @@ a {
 	color: var(--lightColour);
 	padding-left: 12rem;
 	padding-top: 18rem;
+	margin-top: 12rem;
 	height: 85rem;
 }
 

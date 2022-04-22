@@ -1,16 +1,21 @@
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa'
 import { HashLink as Link } from 'react-router-hash-link'
+import { useEffect } from 'react'
 function Header() {
-	const headerElement = document.querySelector('.topMostContainer')
+	useEffect(() => {
+		const headerElement = document.querySelector('.otherHalf')
 
-	window.onscroll = function () {
-		var top = window.scrollY
-		if (top > 850) {
-			headerElement.classList.add('transformFullBackground')
-		} else {
-			headerElement.classList.remove('transformFullBackground')
+		window.onscroll = function () {
+			var top = window.scrollY
+			console.log(top)
+			if (top > 870) {
+				headerElement.classList.add('transformFullBackground')
+			} else {
+				headerElement.classList.remove('transformFullBackground')
+			}
 		}
-	}
+	})
+
 	return (
 		<>
 			<div className="grid topMostContainer">
@@ -63,6 +68,7 @@ function Header() {
 						</div>
 					</div>
 				</div>
+				<div className="grid-column3 otherHalf"></div>
 			</div>
 		</>
 	)
