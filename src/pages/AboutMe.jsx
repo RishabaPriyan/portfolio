@@ -10,11 +10,10 @@ function AboutMe() {
 					<h2 className="aboutMeHeader">
 						<span className="headerDecoration invert">My</span> Story
 					</h2>
-					<section>
+					<section className="aboutMeDescription">
 						<p>
-							Hi, Rishaba Priyan here. I'm a 25-year-old and I’m from Tamil
-							Nadu, India. I have 16 months of experience developing web
-							applications.{' '}
+							Hi, Rishaba Priyan here. I'm 25-years-old and from Tamil Nadu,
+							India. I have 16 months of experience developing web applications.{' '}
 						</p>
 						<p>
 							I love designing and coding web applications. I enjoy learning new
@@ -23,7 +22,7 @@ function AboutMe() {
 						</p>
 					</section>
 				</div>
-				<div className="grid-column1"></div>
+				<div className="grid-column1 empty-grid"></div>
 				<div className="profilePicImageContainer grid-column6">
 					<img
 						className="profilePicImage"
@@ -31,22 +30,22 @@ function AboutMe() {
 						alt="Rishab Profile Pic"
 					/>
 				</div>
-				<div className="grid-column1"></div>
+				<div className="grid-column1 empty-grid"></div>
 			</div>
 			<div className="secondRow grid-column12 grid">
-				<div className="textContainer grid-column4">
+				<div className="textContainer grid-column4 grid-column12-mobile">
 					<h2 className="aboutMeHeader">
 						<span className="headerDecoration invert">My</span> Interests
 					</h2>
-					<section className="grid-column12 grid">
-						<span className="grid-column6">
+					<section className="grid-column12 grid interestsSection">
+						<span className="grid-column6 grid-column12-mobile">
 							<ul>
 								<li>Web Design </li>
 								<li>Art</li>
 								<li>Illustrated Comics</li>
 							</ul>
 						</span>
-						<span className="grid-column6">
+						<span className="grid-column6 grid-column12-mobile">
 							<ul>
 								<li>Chess </li>
 								<li>Books</li>
@@ -55,8 +54,8 @@ function AboutMe() {
 						</span>
 					</section>
 				</div>
-				<div className="grid-column2"></div>
-				<div className="resumeDownloadLinkContainer grid-column4">
+				<div className="grid-column2 empty-grid"></div>
+				<div className="resumeDownloadLinkContainer grid-column4 grid-column12-mobile">
 					<a
 						href="https://drive.google.com/file/d/1l-68ZZHHWD3jA5duH8t0VZf59lLRJiaY/view?usp=sharing"
 						className="resumeDownloadLink"
@@ -67,7 +66,7 @@ function AboutMe() {
 						Click here for my Resume
 					</a>
 				</div>
-				<div className="grid-column2"></div>
+				<div className="grid-column2 empty-grid"></div>
 			</div>
 			<ReactTooltip type="info" textColor="#350b6f" backgroundColor="#fbfbfc" />
 		</div>

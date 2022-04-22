@@ -21,6 +21,10 @@
 	padding: 0;
 	margin: 0;
 }
+html,
+body {
+	overflow-x: hidden;
+}
 html {
 	/* 1rem = 10px */
 	font-size: 62.5%;
@@ -89,6 +93,7 @@ body {
 .grid-column-display-none {
 	display: none;
 }
+
 /*------------------------------------Header-------------------------------*/
 .headerContainer {
 	height: 12rem;
@@ -241,6 +246,10 @@ a {
 	font-size: 2.4rem;
 	color: var(--mediumColour);
 	font-weight: 500;
+}
+.stackIconsList {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 .stackIconsList li {
 	list-style-type: none;
@@ -612,9 +621,9 @@ a {
 	.myWorksContainer {
 		padding-top: 12rem;
 	}
-	.myWorksContainer * {
+	/* .myWorksContainer * {
 		border: solid 1px;
-	}
+	} */
 	.sectionHeader {
 		font-size: 2rem;
 		margin-bottom: 4rem;
@@ -627,7 +636,7 @@ a {
 		padding-top: 4rem;
 		padding-bottom: 4rem;
 		margin-bottom: 4rem;
-		height: min(110rem);
+		height: min(60rem);
 	}
 
 	.projectHeader {
@@ -638,7 +647,7 @@ a {
 		height: 1.5rem;
 	}
 	.projectDescription {
-		width: min(25ch);
+		width: min(27ch);
 		font-size: 2.4rem;
 	}
 
@@ -650,6 +659,7 @@ a {
 	}
 	.projectNumberIndicator {
 		font-size: 30rem;
+		display: none;
 	}
 
 	.projectImageMockup {
@@ -657,20 +667,20 @@ a {
 		display: inline;
 	}
 	.projectImageMockup > img {
-		height: 25rem;
-		width: 50rem;
+		height: 20rem;
+		width: 35rem;
 	}
 
 	.eachProjectContainer.even {
 		background-color: var(--mediumColour);
 		color: var(--lightColour);
-		padding-right: 12rem;
+		padding-right: 0;
 	}
 	.eachProjectContainer.even .headingAndDescContainer {
-		align-items: flex-end;
+		align-items: baseline;
 	}
 	.eachProjectContainer.even .numberAndMockupContainer {
-		flex-direction: row-reverse;
+		flex-direction: row;
 	}
 	.eachProjectContainer.even .projectHeader,
 	.eachProjectContainer.even .projectDescription {
@@ -683,17 +693,133 @@ a {
 	}
 
 	/*----------------------------------skills---------------------------------*/
+
+	/* .mySkillsContainer * {
+		border: solid 1px;
+	} */
 	.mySkillsContainer {
+		padding: 5.5rem 6rem 5.5rem 6rem;
+	}
+
+	.secHeader {
+		font-size: 2rem;
+		margin-bottom: 4rem;
+	}
+	.skillContainer {
+		grid-column-gap: 10rem;
+		margin-top: 0rem;
+		grid-template-columns: max-content;
+		grid-row-gap: 2rem;
+	}
+	.skillsImageContainer {
 		display: none;
 	}
+
+	.eachSkillContainer {
+		height: min(33rem);
+	}
+
+	.skillIcon svg {
+		height: 3.2rem;
+		width: 3.2rem;
+	}
+
 	/*----------------------------------aboutMe---------------------------------*/
+	/* .aboutMeContainer * {
+		border: solid 1px;
+	} */
+	.empty-grid {
+		display: none;
+	}
 	.aboutMeContainer {
-		display: none;
+		padding: 5.5rem 6rem 5.5rem 6rem;
+		background: var(--mediumColour);
+		color: var(--lightColour);
+		font-size: 2rem;
+		position: relative;
+		height: 100%;
 	}
+	.firstRow {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 0rem;
+	}
+
+	.textContainer section {
+		margin-top: 38rem;
+	}
+	.secondRow section {
+		margin-top: 3.5rem;
+	}
+	.textContainer section p {
+		margin-top: 5.5rem;
+		width: 30ch;
+	}
+	.aboutMeHeader {
+		color: var(--lightColour);
+		font-weight: normal;
+		font-size: 2rem;
+	}
+
+	.profilePicImage {
+		width: 30rem;
+		height: 30rem;
+		border-radius: 15rem;
+		top: 10rem;
+		position: absolute;
+	}
+	.secondRow {
+		margin-top: 5.5rem;
+	}
+
+	.resumeDownloadLinkContainer {
+		display: flex;
+		margin-top: 3.5rem;
+	}
+
 	/*----------------------------------ContactMe-------------------------------*/
+
 	.contactMeSectionContainer {
+		padding: 5.5rem 6rem 5.5rem 6rem;
+	}
+
+	.Header {
+		font-size: 2rem;
+	}
+	.contactMeContainer {
+		margin-top: 2.5rem;
+	}
+	.mailImageContainer {
 		display: none;
 	}
+
+	.contactFormContainer {
+		height: 57rem;
+		width: 30rem;
+	}
+	.form-control {
+		display: flex;
+		flex-direction: column;
+		padding: 4rem 3rem 4rem 3rem;
+	}
+	.form-control div {
+		margin-bottom: 1.5rem;
+	}
+	.form-control .formHeader {
+		font-size: 2rem;
+	}
+	.submitButton {
+		display: flex;
+		justify-content: center;
+	}
+
+	.formDiv {
+		margin-top: 2rem;
+	}
+	.formDivMessage {
+		margin-top: 3rem;
+	}
+
 	/*----------------------------------aboutMe---------------------------------*/
 }
 @media (min-width: 481px) and (max-width: 768px) {
