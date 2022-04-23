@@ -70,7 +70,7 @@ function Header() {
 						</div>
 					</div>
 				</div>
-				<div className="grid-column3 otherHalf"></div>
+				<div className="grid-column3 otherHalf "></div>
 			</div>
 		</>
 	)
