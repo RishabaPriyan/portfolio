@@ -57,7 +57,7 @@ function AboutMe() {
 				<div className="grid-column2 empty-grid"></div>
 				<div className="resumeDownloadLinkContainer grid-column4 grid-column12-mobile grid-column6-tablet">
 					<a
-						href="https://drive.google.com/file/d/1wGqae53GEtVm4SvT3ed-eEAaa_Tbz4Vq/view?usp=sharing"
+						href="https://drive.google.com/file/d/1xhcofPLweujcmdQAw5FJoOMZJygW0ki3/view?usp=sharing"
 						className="resumeDownloadLink"
 						target={'_blank'}
 						rel="noreferrer"
