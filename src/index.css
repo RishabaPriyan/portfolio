@@ -1164,6 +1164,7 @@ a {
 		height: 30rem;
 	}
 }
+/*----------------------------------------mailMe image container------------------*/
 @media (min-width: 769px) and (max-width: 990px) {
 	div.mailImageContainer {
 		display: none;
