@@ -286,6 +286,20 @@ a {
 	height: 2rem;
 	color: var(--darkestColour);
 }
+.websiteViewButton {
+	background-color: var(--darkestColour);
+	display: flex;
+	justify-content: space-around;
+	color: var(--lightColour);
+	cursor: pointer;
+	border-radius: 2.1rem;
+	width: 8ch;
+	margin-top: 2rem;
+}
+.websiteViewButton.even {
+	background-color: var(--lightColour);
+	color: var(--darkestColour);
+}
 .projectDescription {
 	width: min(50ch);
 	font-size: 2.4rem;
@@ -1150,6 +1164,11 @@ a {
 		height: 30rem;
 	}
 }
+@media (min-width: 769px) and (max-width: 990px) {
+	div.mailImageContainer {
+		display: none;
+	}
+}
 /*---------------------------------------laptop-----------------------------------*/
 @media (min-width: 769px) and (max-width: 1024px) {
 	.grid-column1-laptop {
@@ -1231,7 +1250,7 @@ a {
 	}
 	.textContainer section p {
 		margin-top: 5.5rem;
-		width: 33ch;
+		width: 29ch;
 	}
 
 	.empty-grid {

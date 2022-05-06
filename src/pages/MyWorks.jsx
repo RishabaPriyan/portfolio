@@ -23,21 +23,21 @@ function MyWorks() {
 			<div className="eachProjectContainer">
 				<div className=" marginProjectContainer">
 					<div className="headingAndDescContainer">
-						<h2 className="projectHeader">
-							<a
-								href="https://rishabsupportdesk.herokuapp.com/"
-								target={'_blank'}
-								rel="noreferrer"
-								data-tip="click to visit website"
-								data-for="odd"
-							>
-								Ticket System
-								<FaInfo className="infoButton" />
-							</a>
-						</h2>
+						<h2 className="projectHeader">Ticket System</h2>
 						<p className="projectDescription">
 							This is a website where registered users, raise tickets regarding
 							specific products.The website is made using MERN Stack.
+							<div className="websiteViewButton">
+								<a
+									href="https://rishabsupportdesk.herokuapp.com/"
+									target={'_blank'}
+									rel="noreferrer"
+									data-tip="click to visit website"
+									data-for="odd"
+								>
+									<span>Visit</span>
+								</a>
+							</div>
 							<ul className="stackIconsList">
 								<li>
 									<SiMongodb />
@@ -68,22 +68,22 @@ function MyWorks() {
 			<div className=" eachProjectContainer even">
 				<div className=" marginProjectContainer">
 					<div className="headingAndDescContainer ">
-						<h2 className="projectHeader">
-							<a
-								href="https://house-market-place-sepia.vercel.app/"
-								target={'_blank'}
-								rel="noreferrer"
-								data-tip="click to visit website"
-								data-for="even"
-							>
-								House Market Place
-								<FaInfo className="infoButton" />
-							</a>
-						</h2>
+						<h2 className="projectHeader">House Market Place</h2>
 						<p className="projectDescription">
 							This is a website where registered users can share listings for
 							either rent or sale. The website is made using ReactJs for
 							FrontEnd and Google Firestore for backend.
+							<div className="websiteViewButton even">
+								<a
+									href="https://house-market-place-sepia.vercel.app/"
+									target={'_blank'}
+									rel="noreferrer"
+									data-tip="click to visit website"
+									data-for="even"
+								>
+									<span>Visit</span>
+								</a>
+							</div>
 							<ul className="stackIconsList">
 								<li>
 									<SiFirebase />
@@ -117,22 +117,22 @@ function MyWorks() {
 			<div className="eachProjectContainer">
 				<div className="marginProjectContainer ">
 					<div className="headingAndDescContainer">
-						<h2 className="projectHeader">
-							<a
-								href="https://github-finder-swart-one.vercel.app/"
-								target={'_blank'}
-								rel="noreferrer"
-								data-tip="click to visit website"
-								data-for="odd"
-							>
-								GitHub Profile Finder
-								<FaInfo className="infoButton" />
-							</a>
-						</h2>
+						<h2 className="projectHeader">GitHub Profile Finder</h2>
 						<p className="projectDescription">
 							This is a website where anyone can search and view github profiles
 							and other related information .The website is made using
 							ReactJs,TailwindCSS and DaisyUi for FrontEnd and GitHub API.
+							<div className="websiteViewButton ">
+								<a
+									href="https://github-finder-swart-one.vercel.app/"
+									target={'_blank'}
+									rel="noreferrer"
+									data-tip="click to visit website"
+									data-for="odd"
+								>
+									<span>Visit</span>
+								</a>
+							</div>
 							<ul className="stackIconsList">
 								<li>
 									<SiGithub />
